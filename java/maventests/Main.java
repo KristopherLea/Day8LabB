@@ -1,29 +1,25 @@
 package maventests;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import org.junit.Test;
 
 public class Main {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws NameException {
 		
 
- String person = "Kris";
-			
+ ArrayList<String> list = new ArrayList<String>();
+			list.add("Hi");
+		
 			try {
-				for(int i = 0; i <person.length(); i++) {
-					System.out.println(person.length());
-				}
-				if(person.length() > 5) {
-				throw new Exception();
-				}
-				else {
-					throw new Exception();
-						//System.out.println("Length of Name.");
-					}
-				} catch (Exception e) {
-					System.out.println("Out of bounds");
+					
+			list.get(1);
+				
+			} catch (Exception e) {
+				throw new NameException();
+				
 			}
 	}
 }
